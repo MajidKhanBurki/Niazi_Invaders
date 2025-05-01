@@ -20,7 +20,7 @@ The game uses custom assets like a background image, bullets, enemy sprites, and
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/niazi-invaders.git
+git clone https://github.com/majidkhanburki/niazi_invaders.git
 cd niazi-invaders
 ```
 
