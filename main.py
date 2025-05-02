@@ -99,6 +99,7 @@ def isCollison(enemyX,enemyY,bulletX,bulletY):
     else:
         return False
 
+game_over_sound = mixer.Sound('media/audio/Game_Over.mp3')
 
 running = True
 
@@ -143,19 +144,16 @@ while running:
     elif shipX >= 736:
         shipX = 736
 
-
-
     # Enemy movement
     for i in range(num_niazi):
-
+        
         #Game Over
         if niaziY[i] >340:
             for j in range (num_niazi):
                 niaziY[j] = 1000;
             game_over_text()
-            game_over_sound = mixer.Sound('media/audio/Game_Over.mp3')
-            game_over_sound.play()
-            break        
+            game_over_sound.play()   
+            break     
         niaziX[i] += niaziMoveX[i]
         if niaziX[i] <= 0:
             niaziMoveX[i] = 1;
