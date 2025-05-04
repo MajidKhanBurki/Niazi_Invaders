@@ -21,7 +21,7 @@ The game uses custom assets like a background image, bullets, enemy sprites, and
 
 ```bash
 git clone https://github.com/majidkhanburki/niazi_invaders.git
-cd niazi-invaders
+cd niazi_invaders
 ```
 
 ### 2. Install dependencies
